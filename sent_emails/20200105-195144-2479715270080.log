@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: julykopysova97@gmail.com
+Date: Sun, 05 Jan 2020 17:51:44 -0000
+Message-ID: <157824670445.8968.9046424062134045588@DESKTOP-41E9SHO>
+
+Someone asked for password reset for email julykopysova97@gmail.com. Follow the link below:
+http://127.0.0.1:8000/accounts/reset/MQ/5cv-0fa8f001a33e66d69407/
+
+-------------------------------------------------------------------------------

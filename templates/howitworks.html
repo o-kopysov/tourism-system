@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}How it works{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style_howitworks.css' %}" />
+<div class="image1">
+<img src="{% static 'images/church.jpg' %}"alt="" width = "600" height = "400" class = "church">
+<div class = "description">
+<h2 class= "title_image1">About Kharkiv</h2>
+<p class = "description_image1">The Kharkiv market in the metro area of ​​Academician Barabashov is today considered the largest market in Europe. Its area is 75 hectares. Kharkiv is the first capital of Ukraine. In 1919, when the Bolsheviks created the Ukrainian Soviet Republic, Kharkiv was proclaimed the capital of Ukraine.</p>
+</div>
+</div>
+
+
+
+<div class="advantage1">
+<img src="{% static 'images/Line.png' %}" alt="" width = "130" class="image_group1" >
+<h3 class="advantage"><br>Access 80+ top attractions<img src="{% static 'images/3-plus.png' %}" width="150" height="150" alt="Логотип" class = "image_photo"/><br></h3>
+<img src="{% static 'images/Line.png' %}" alt="" width = "130" class="image_group1" >
+<h3 class="advantage"><br>Additional exclusive deals<img src="{% static 'images/2-plus.png' %}" width="150" height="150" alt="Логотип" class = "image_photo"/><br></h3>
+<img src="{% static 'images/Line.png' %}" alt="" width = "130" class="image_group1" >
+<h3 class="advantage"><br>Entry at selected attractions<img src="{% static 'images/1-plus.png' %}"  width="150" height="150" alt="Логотип" class = "image_photo"/><br></h3>
+</div>
+
+
+
+<div class="step">
+<div><img src="{% static 'images/Group.png' %}" alt="" class="image_group" ></div>
+
+<ul>
+<li ><h3 class ="title_step">STEP</h3></li>
+<li >  Choose a type the Shocard and buy</li>
+<li >  Get the Shocard number</li>
+<li >  Show the Shocard at the entrance</li>
+</ul>
+</div>
+
+<div class = "quetions">
+<div class = "description_quetion">
+<h3 class = "quetions1">Need Some Help?</h3>
+<div class="description_1">View all frequently asked questions and if you can't find the answer, we’re here to help. Chat with us online, call us, or send us an email.</div>
+<a href="{% url 'faq' %}"  class = "FAQ">See FAQs</a>
+</div>
+</div>
+
+{% endblock %}

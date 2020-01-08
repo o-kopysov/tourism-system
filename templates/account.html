@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}FAQ{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style_account.css' %}"/><!-- string Prices-->
+<link rel="stylesheet" href="{% static 'css/style_buy_account.css' %}"><!-- string Prices-->
+{% if user.is_authenticated %}
+<div class = "all">
+    <div class ="aside_account">
+
+      <div class = "title_Account">Account</div>
+      <div class = "account" >
+        <div class = "user_name">
+          <div class = "Name_account">Username:</div>
+          <div class = "name_account">{{ user.username }}</div></div>
+        <div class = "user_name">
+          <div class = "Name_account">Name:</div>
+          <div class = "name_account">{{ user.first_name }}</div></div>
+            <div class = "user_surname">
+          <div class = "Surname_account">Surname:</div>
+          <div class = "surname_account">{{ user.last_name }}</div></div>
+            <div class = "user_email">
+            <div class="Email_account">E-mail:</div>
+        <div class="email_account">{{ user.email }}</div></div>
+        <div class = "buy">
+        <a class="gradient-btn_account"  href="{% url 'edit_account' %}">Edit</a>
+        <a class="gradient_btn_account"  href="">Edit</a></div>
+      </div>
+
+
+    </div>
+
+
+<div class = "article_account">
+
+  <div class ="section_account">
+
+    <div class = "buy_ticket">
+<div class = "All_ticket">Tickets</div>
+      <div class = "ticket_LITE">
+    <div class = "name_info">Lite</div>
+      <div class = "name_account surname_account">Olga Davydova</div>
+    <div class="number_account">00011101</div>
+    	<img src="{% static 'images/red.png' %}" height="30" width="50">
+    <div class = "date">
+    <div class = "start_date">21.12.2019</div>
+    	<div class = "end_date">23.12.2019</div>
+      </div>
+    </div>
+    <div class = "ticket_VIP">
+  <div class = "name_info">VIP</div>
+    <div class = "name_account surname_account">Julia Kopysova</div>
+  <div class="number_account">00011102</div>
+    <img src="{% static 'images/red.png' %}" height="30" width="50">
+  <div class = "date">
+  <div class = "start_date">21.12.2019</div>
+      <div class = "end_date">23.12.2019</div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+<div class ="section_account">
+  <div class = "basket">
+              <div class = "title_Basket">Your basket</div>
+              <div class = "close"><img src="{% static 'images/close.jpg' %}"  height="30"></div>
+              <div class="Basket">
+              <div class = "ticket_basket">
+              <div class = "name_info_basket">VIP</div>
+               <div class="day"> 5 Days </div>
+              <div class = "form"><input class="form-styling" type="text" name="username" placeholder="Name"/>
+              <input class="form-styling" type="text" name="username" placeholder="Username"/>
+          <div class = "Date"><input class="form-styling1" type="text" name="day" placeholder="Day"/>
+          <input class="form-styling1" type="text" name="month" placeholder="Month"/>
+        <input class="form-styling1" type="text" name="year" placeholder="Year"/></div></div>
+        <div class = "price">1250 ₴</div>
+              </div>
+              <div class = "buy">
+              <a class="gradient-btn_account"  href="">Confirm</a>
+              <a class="gradient_btn_account"  href="">Confirm</a></div>
+            </div>
+
+            <div class = "close"><img src="{% static 'images/close.jpg' %}" height="30"></div>
+
+            <div class="Basket">
+            <div class = "ticket_basket">
+            <div class = "name_info_basket">Lite</div>
+             <div class="day"> 3 Days </div>
+            <div class = "form"><input class="form-styling" type="text" name="username" placeholder="Name"/>
+            <input class="form-styling" type="text" name="username" placeholder="Username"/>
+        <div class = "Date"><input class="form-styling1" type="text" name="day" placeholder="Day"/>
+        <input class="form-styling1" type="text" name="month" placeholder="Month"/>
+      <input class="form-styling1" type="text" name="year" placeholder="Year"/></div></div>
+              <div class = "price">1250 ₴</div>
+            </div>
+            <div class = "buy">
+            <a class="gradient-btn_account"  href="">Confirm</a>
+            <a class="gradient_btn_account"  href="">Confirm</a></div>
+          </div>
+ <div class="total_price">Total price: 5050950 ₴</div>
+ <div class = "buy">
+ <a class="gradient-btn_account"  href="">Buy</a>
+ <a class="gradient_btn_account"  href="">Buy</a></div>Buy
+                    </div>
+
+</div>
+
+
+</div>
+
+<div class = "using_ticket">
+<h2>History</h2>
+          <div class = "History">
+            <div class = "ticket_history">
+          <div class = "name_info_history">Lite</div>
+            <div class = "name_account surname_account">Olga Davydova</div>
+          <div class = "date_history">
+          <div class = "start_date_history">21.12.2019</div>
+            <div class = "end_date_history">23.12.2019</div>
+            </div>
+          </div>
+          <div class = "ticket_history">
+        <div class = "name_info_history">Lite</div>
+          <div class = "name_account surname_account">Olga Davydova</div>
+        <div class = "date_history">
+        <div class = "start_date_history">21.12.2019</div>
+          <div class = "end_date_history">23.12.2019</div>
+          </div>
+        </div>
+        <div class = "ticket_history">
+      <div class = "name_info_history">Lite</div>
+        <div class = "name_account surname_account">Olga Davydova</div>
+      <div class = "date_history">
+      <div class = "start_date_history">21.12.2019</div>
+        <div class = "end_date_history">23.12.2019</div>
+        </div>
+      </div>
+      <div class = "ticket_history">
+    <div class = "name_info_history">Lite</div>
+      <div class = "name_account surname_account">Olga Davydova</div>
+    <div class = "date_history">
+    <div class = "start_date_history">21.12.2019   </div>
+      <div class = "end_date_history">23.12.2019</div>
+      </div>
+    </div>
+
+        </div>
+        </div>
+</div>
+{% else %}
+  <h2>Please, Log In</h2>
+{% endif %}
+{% endblock %}
