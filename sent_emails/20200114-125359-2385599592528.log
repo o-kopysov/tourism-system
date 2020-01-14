@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: lll2@gmail.com
+Date: Tue, 14 Jan 2020 10:53:59 -0000
+Message-ID: <157899923944.14436.14487050129870742736@DESKTOP-41E9SHO>
+
+Someone asked for password reset for email lll2@gmail.com. Follow the link below:
+http://127.0.0.1:8000/accounts/reset/OA/5d4-9fb979f75394bc18b8c3/
+
+-------------------------------------------------------------------------------

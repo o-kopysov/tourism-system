@@ -17,10 +17,12 @@ import os
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic.base import TemplateView
-
+from django.conf import settings
+from django.conf.urls.static import static
+from polls import views
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', views.index , name='home'),
     path('july/', include('july.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
@@ -29,5 +31,5 @@ urlpatterns = [
     path('prices/', TemplateView.as_view(template_name='prices.html'), name='prices'),
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
 ]
-
+urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"

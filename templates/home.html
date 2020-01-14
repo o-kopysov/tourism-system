@@ -12,71 +12,23 @@
 
 <div class = "attractions">
      <div class="slider owl-carousel">
+
+       {%for sight in sights %}
          <div class="slider__item">
-             <img src="{% static 'images/Metal.png' %}" alt="" class="slider__image">
-           <div class="slider__year">1926</div>
-           <h3 class="slider__title ">Metalist Stadium</h3>
+             <img src="{{sight.img.url}}" alt="" class="slider__image">
+           <div class="slider__year">{{sight.year}}</div>
+           <h3 class="slider__title ">{{sight.name_sight}}</h3>
            <div class="slider__rating">
-             <div class="span slider__rating-label">Address</div>
+             <div class="span slider__rating-label">{{sight.address}}</div>
            </div>
+           
          </div>
-         <div class="slider__item">
-             <img src="{% static 'images/PG.jpg' %}" alt="" class="slider__image">
-           <div class="slider__year">1907</div>
-           <h3 class="slider__title ">Gorky Park </h3>
-           <div class="slider__rating">
-             <div class="span slider__rating-label">Address</div>
-           </div>
+         {% endfor %}
+
          </div>
-       <div class="slider__item">
-           <img src="{% static 'images/Hatob.jpg' %}" alt="" class="slider__image">
-         <div class="slider__year">1925</div>
-         <h3 class="slider__title ">The scenes of Hnatoba</h3>
-         <div class="slider__rating">
-           <div class="span slider__rating-label">Address</div>
-         </div>
+
+
        </div>
-       <div class="slider__item">
-           <img src="{% static 'images/Delfi.png' %}" alt="" class="slider__image">
-         <div class="slider__year">2009</div>
-         <h3 class="slider__title ">Kharkov dolphinarium </h3>
-         <div class="slider__rating">
-           <div class="span slider__rating-label">Address</div>
-         </div>
-       </div>
-       <div class="slider__item ">
-           <img src="{% static 'images/sobor.png' %}" alt="" class="slider__image">
-         <div class="slider__year">1901</div>
-         <h3 class="slider__title">Blagoveshchensky <br>cathedral</h3>
-         <div class="slider__rating">
-           <span class="span slider__rating-label">Address</span>
-         </div>
-       </div>
-       <div class="slider__item">
-           <img src="{% static 'images/Erm.jpg' %}" alt="" class="slider__image">
-         <div class="slider__year">2008</div>
-         <h3 class="slider__title ">ErmilovCenter</h3>
-         <div class="slider__rating">
-           <div class="span slider__rating-label">Address</div>
-         </div>
-       </div>
-       <div class="slider__item">
-           <img src="{% static 'images/planet.jpg' %}" alt="" class="slider__image">
-         <div class="slider__year">1957</div>
-         <h3 class="slider__title ">Planetarium</h3>
-         <div class="slider__rating">
-           <div class="span slider__rating-label">Address</div>
-         </div>
-       </div>
-       <div class="slider__item">
-           <img src="{% static 'images/Karazin.jpg' %}" alt="" class="slider__image">
-         <div class="slider__year">1933</div>
-         <h3 class="slider__title "> University named  Karazin</h3>
-         <div class="slider__rating">
-           <div class="span slider__rating-label">Address</div>
-         </div>
-       </div>
-     </div>
-</div>
+
 
 {% endblock %}

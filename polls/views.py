@@ -1,4 +1,5 @@
-
 from django.shortcuts import render
-def new_home(request):
-    return render(request,'home.html')
+from .models import Sight
+def index(request):
+    sights = Sight.objects.all()
+    return render(request,'home.html', {'sights':sights})
