@@ -1,6 +1,8 @@
 from django.conf import settings
 from django.db import models
 from django.shortcuts import reverse
+from django.db.models.signals import post_save
+from django.conf import settings
 
 class Sight(models.Model):
     name_sight = models.CharField(max_length=60)
@@ -11,9 +13,18 @@ class Sight(models.Model):
     link = models.URLField()
     slug = models.SlugField()
 
-    
-
     def get_absolute_url(self):
         return reverse("sight", kwargs = {
         'slug': self.slug
         })
+
+TYPE_CHOICES = (
+    ('VIP', 'VIP'),
+    ('Lite', 'Lite')
+)
+
+class Type(models.Model):
+    type = models.CharField(choices=TYPE_CHOICES, max_length=4)
+    days = models.IntegerField()
+    desc = models.TextField()
+    price = models.FloatField()

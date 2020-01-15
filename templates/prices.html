@@ -7,76 +7,21 @@
 {% block content %}
 
 <link rel="stylesheet" href="{% static 'css/style_prices.css' %}"/><!-- string Prices-->
-<link rel="stylesheet" href="{% static 'css/style_buy.css' %}"><!-- string Prices-->
+<link rel="stylesheet" href="{% static 'css/style_buy.css' %}"><!-- string Prices  {{type.get_label_display}}-->
 <div class ="section_Prices">
 
-<div class="ticket" height = "200" width="10" >
-<div class = "name_info">Lite</div>
-  <div class = "description_Prices"><p>This card gives you the opportunity to visit all the top Kharkiv attractions.</p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
+ {%for item in object_list %}
+<div class="{{item.type}}" height = "200" width="10" >
+<div class = "name_info">{{item.type}}</div>
+  <div class = "description_Prices"><p> {{item.desc}} </p></div>
+<div class="day"> {{item.days}} Days</div>
+<div class = "price"> {{item.price}} ₴</div>
 <div class = "buy">
 <a class="gradient-btn_Prices"  href="">Add to basket</a>
 <a class="gradient_btn_Prices"  href="">Add to basket</a></div>
 </div>
+ {% endfor %}
 
-<div class="ticket" height = "200" width="10" >
-<div class = "name_info">Lite</div>
-  <div class = "description_Prices"><p>This card gives you the opportunity to visit all the top Kharkiv attractions.</p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
-
-<div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
-</div>
-<div class="ticket" height = "200" width="10" >
-<div class = "name_info">Lite</div>
-  <div class = "description_Prices"><p>This card gives you the opportunity to visit all the top Kharkiv attractions.</p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
-
-<div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
-</div>
-
-<div class="ticket1" height = "200" width="10" >
-<div class = "name_info">VIP</div>
-  <div class = "description_Prices"><p>This card allows you to visit all attractions without a queue, have individual tours, don`t book tickets in advance</p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
-
-
-<div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
-</div>
-
-<div class="ticket1" height = "200" width="10" >
-<div class = "name_info">VIP</div>
-  <div class = "description_Prices"><p>This card allows you to visit all attractions without a queue, have individual tours, don`t book tickets in advance</p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
-
-
-<div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
-</div>
-
-<div class="ticket1" height = "200" width="10" >
-<div class = "name_info">VIP</div>
-  <div class = "description_Prices"><p>This card allows you to visit all attractions without a queue, have individual tours, don`t book tickets in advance </p></div>
-<div class="day"> 5 Days</div>
-<div class = "price"> 1250 ₴</div>
-
-<div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
-</div>
-
-</div>
 
 <div class = "section_Prices">
 <h2 class="title_review">Trusted by over 3 customers, here's what they have to say</h2>

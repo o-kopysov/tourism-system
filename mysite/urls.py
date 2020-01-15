@@ -29,7 +29,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('howitworks/', TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),
-    path('prices/', TemplateView.as_view(template_name='prices.html'), name='prices'),
+    path('prices/', views.PricesView.as_view(), name='prices'),
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
 ]
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
