@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Sight_Detail{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/sight.css' %}" />
+<h1>{{ object.name_sight }}</h1>
+	<img  width="500" height="300"  src="{{sight.img.url}}"/>
+		<h2>Описание </h2>
+		<p> {{ object.description }}</p>
+		<h2>{{ object.address }}</h2>
+		<a href="{{ object.link }}"> Посетите сайт</a>
+{% endblock %}

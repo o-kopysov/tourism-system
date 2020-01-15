@@ -13,16 +13,18 @@
 <div class = "attractions">
      <div class="slider owl-carousel">
 
-       {%for sight in sights %}
+       {%for sight in object_list %}
+       <a href="{{sight.get_absolute_url}}">
          <div class="slider__item">
              <img src="{{sight.img.url}}" alt="" class="slider__image">
+
            <div class="slider__year">{{sight.year}}</div>
            <h3 class="slider__title ">{{sight.name_sight}}</h3>
            <div class="slider__rating">
              <div class="span slider__rating-label">{{sight.address}}</div>
            </div>
-           
-         </div>
+
+         </div> </a>
          {% endfor %}
 
          </div>

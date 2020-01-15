@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 from polls import views
 
 urlpatterns = [
-    path('', views.index , name='home'),
+    path('', views.HomeView.as_view() , name='home'),
+    path('sight/<slug>/', views.SightDatailView.as_view(), name ='sight'),
     path('july/', include('july.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
