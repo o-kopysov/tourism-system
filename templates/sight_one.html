@@ -6,10 +6,23 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/sight.css' %}" />
-<h1>{{ object.name_sight }}</h1>
+<link rel="stylesheet" href="{% static 'css/sight_one.css' %}" />
+<div class="block1">
+<div class="sight_one"><h1>{{ object.name_sight }}</h1></div>
 	<img  width="500" height="300"  src="{{sight.img.url}}"/>
-		<h2>Описание </h2>
-		<p> {{ object.description }}</p>
-		<h2>{{ object.address }}</h2>
-		<a href="{{ object.link }}"> Посетите сайт</a>
+	</div>
+
+	<div class="block2">
+<div class = "info1">
+	<div class = "block3-year">{{ object.year }}</div>
+		<div class = "block3">{{ object.address }}</div>
+	<a href="{{ object.link }}"><div class = "block3-site"><p>Web-site</p></div></a>
+		</div>
+
+		<div class = "description2">
+		{{ object.description }}</div>
+		</div>
+
+
+
 {% endblock %}

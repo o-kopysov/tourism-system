@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,7 @@ LOGIN_REDIRECT_URL = '/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+CART_SESSION_ID = 'cart'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
 os.path.join(BASE_DIR, 'static')

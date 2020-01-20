@@ -19,18 +19,15 @@ from django.urls import include, path
 from django.views.generic.base import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
-from polls import views
+from polls import views, urls
 
 urlpatterns = [
-    path('', views.HomeView.as_view() , name='home'),
-    path('sight/<slug>/', views.SightDatailView.as_view(), name ='sight'),
+    path('', include('polls.urls')),
     path('july/', include('july.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('howitworks/', TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),
-    path('prices/', views.PricesView.as_view(), name='prices'),
-    path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
+
 ]
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"

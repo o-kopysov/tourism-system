@@ -10,20 +10,20 @@
 <link rel="stylesheet" href="{% static 'css/style_buy.css' %}"><!-- string Prices  {{type.get_label_display}}-->
 <div class ="section_Prices">
 
- {%for item in object_list %}
-<div class="{{item.type}}" height = "200" width="10" >
-<div class = "name_info">{{item.type}}</div>
-  <div class = "description_Prices"><p> {{item.desc}} </p></div>
-<div class="day"> {{item.days}} Days</div>
-<div class = "price"> {{item.price}} ₴</div>
+ {%for element in object_list %}
+<div class="{{element.type}}" height = "200" width="10" >
+<div class = "name_info">{{element.type}}</div>
+  <div class = "description_Prices"><p> {{element.desc}} </p></div>
+<div class="day"> {{element.days}} Days</div>
+<div class = "price"> {{element.price}} ₴</div>
 <div class = "buy">
-<a class="gradient-btn_Prices"  href="">Add to basket</a>
-<a class="gradient_btn_Prices"  href="">Add to basket</a></div>
+<a class="gradient-btn_Prices"  href="{{element.get_absolute_url}}"  >Add to basket</a>
+<a class="gradient_btn_Prices"  href="{{element.get_absolute_url}}"  >Add to basket</a></div>
 </div>
  {% endfor %}
 
 
-<div class = "section_Prices">
+
 <h2 class="title_review">Trusted by over 3 customers, here's what they have to say</h2>
 
 
@@ -61,5 +61,5 @@
 
 </div>
 
-</div>
+
 {% endblock %}
