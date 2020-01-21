@@ -44,7 +44,7 @@
     <div class = "name_info">Lite</div>
       <div class = "name_account surname_account">Ivan Ivanov</div>
     <div class="number_account">00011101</div>
-    	<img src="{% static 'images/red.png' %}" height="30" width="50">
+
     <div class = "date">
     <div class = "start_date">21.12.2019</div>
     	<div class = "end_date">23.12.2019</div>
@@ -54,7 +54,7 @@
   <div class = "name_info">VIP</div>
     <div class = "name_account surname_account">Fedor Fedotov</div>
   <div class="number_account">00011102</div>
-    <img src="{% static 'images/red.png' %}" height="30" width="50">
+    
   <div class = "date">
   <div class = "start_date">21.12.2019</div>
       <div class = "end_date">23.12.2019</div>
@@ -66,45 +66,32 @@
 <div class ="section_account">
   <div class = "basket">
               <div class = "title_Basket">Your basket</div>
-              <div class = "close"><img src="{% static 'images/close.jpg' %}"  height="30"></div>
+
+{% for item in cart %}
+{% with type=item.type_tiket%}
               <div class="Basket">
+              <div class = "close"><img src="{% static 'images/close.jpg' %}"  height="30"></div>
               <div class = "ticket_basket">
-              <div class = "name_info_basket">VIP</div>
-               <div class="day"> 5 Days </div>
-              <div class = "form"><input class="form-styling" type="text" name="username" placeholder="Name"/>
-              <input class="form-styling" type="text" name="username" placeholder="Username"/>
-          <div class = "Date"><input class="form-styling1" type="text" name="day" placeholder="Day"/>
-          <input class="form-styling1" type="text" name="month" placeholder="Month"/>
-        <input class="form-styling1" type="text" name="year" placeholder="Year"/></div></div>
-        <div class = "price">1250 ₴</div>
+              <div class = "name_info_basket">{{type.type}}</div>
+               <div class="day">{{type.days}}</div>
+            <div class="day"> {{item.name_person}} </div>
+            <div class="day"> {{item.surname_person}} </div>
+            <div class="day"> {{item.date_start}} </div>
+        <div class = "price">{{type.price}}</div>
               </div>
-              <div class = "buy">
-              <a class="gradient-btn_account"  href="">Confirm</a>
-              <a class="gradient_btn_account"  href="">Confirm</a></div>
-            </div>
 
-            <div class = "close"><img src="{% static 'images/close.jpg' %}" height="30"></div>
-
-            <div class="Basket">
-            <div class = "ticket_basket">
-            <div class = "name_info_basket">Lite</div>
-             <div class="day"> 3 Days </div>
-            <div class = "form"><input class="form-styling" type="text" name="username" placeholder="Name"/>
-            <input class="form-styling" type="text" name="username" placeholder="Username"/>
-        <div class = "Date"><input class="form-styling1" type="text" name="day" placeholder="Day"/>
-        <input class="form-styling1" type="text" name="month" placeholder="Month"/>
-      <input class="form-styling1" type="text" name="year" placeholder="Year"/></div></div>
-              <div class = "price">1250 ₴</div>
             </div>
-            <div class = "buy">
-            <a class="gradient-btn_account"  href="">Confirm</a>
-            <a class="gradient_btn_account"  href="">Confirm</a></div>
-          </div>
- <div class="total_price">Total price: 500 ₴</div>
+{% endwith %}
+{% endfor %}
+
+
+
+ <div class="total_price">Total price: {{cart.get_total_price}} ₴</div>
  <div class = "buy">
  <a class="gradient-btn_account"  href="">Buy</a>
  <a class="gradient_btn_account"  href="">Buy</a></div>Buy
-                    </div>
+
+                      </div>
 
 </div>
 

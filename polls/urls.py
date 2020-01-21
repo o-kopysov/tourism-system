@@ -10,6 +10,6 @@ urlpatterns = [
     path('howitworks/', TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),
     path('prices/', v.PricesView.as_view(), name='prices'),
     path('ticket/<pk>/', v.PricesDetail.as_view(), name='ticket'),
-    path('add', views_cart.cart_add, name='add'),
+    path('add/<pk>', views_cart.cart_add, name='add'),
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
 ]

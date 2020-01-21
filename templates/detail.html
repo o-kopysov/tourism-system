@@ -12,7 +12,7 @@
 <h1>{{ object.price }} ₴</h1>
 <h1>{{ object.days }} Days</h1>
 </div>
-<form action="" method="post">
+<form action="{% url 'add' object.id %}" method="post">
   {% csrf_token %}
   {{ form.as_p}}
   <input type="submit" value="Add to cart">
