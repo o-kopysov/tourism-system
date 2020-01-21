@@ -4,3 +4,17 @@ from django.views.decorators.http import require_POST
 from polls.models import Type, Item
 from .cart import Cart
 from .forms import CartAddItemForm
+
+@require_POST
+def cart_add(request, type_id):
+    type = get_object_or_404(Type, pk=type_id)
+    cart = Cart(request)
+    form = CartAddItemForm(request.POST)
+    if form.is_valid():
+        form.save()
+        cd = form.cleaned_data
+        item = Item(type_tiket = type, name_person = cd['name_person'], surname_person = cd['surname_person'], date_start = cd['date_start'])
+        cart.add(item)
+    else:
+        form = CartAddItemForm(request.POST)
+    return redirect('account')

@@ -10,34 +10,8 @@ from polls.models import Type, Item
 from cart.cart import Cart
 from cart.forms import CartAddItemForm
 
-def cart_remove(request, item_id):
-    cart = Cart(request)
-    item = get_object_or_404(Item, id=item_id)
-    cart.remove(item)
-    return redirect('own_account')
-
-@require_POST
-def cart_add(request, type_id):
-    type = get_object_or_404(Type, id=type_id)
-    cart = Cart(request)
-    form = CartAddItemForm(request.POST)
-    if form.is_valid():
-        form.save()
-        cd = form.cleaned_data
-        #name_person = form.cleaned_data.get('name_person')
-        #surname_person = form.cleaned_data.get('surname_person')
-        #date_start = form.cleaned_data.get('date_start')
-        item = Item(type_tiket = type, name_person = cd['name_person'], surname_person = cd['surname_person'], date_start = cd['date_start'])
-        cart.add(item)
-    else:
-        form = CartAddItemForm(request.POST)
-    return redirect('account')
-
 def own_account(request):
     return render(request,'account.html')
-# own_account(request):
-    #cart = Cart(request)
-    #return render(request, 'account.html', {'cart': cart})
 
 def signup(response):
     if response.method == "POST":

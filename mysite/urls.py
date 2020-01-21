@@ -23,7 +23,6 @@ from polls import views, urls
 
 urlpatterns = [
     path('', include('polls.urls')),
-    path('july/', include('july.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),

@@ -36,12 +36,7 @@ class Type(models.Model):
         })
 
 class Item(models.Model):
-    #type_ticket - store all fields about type
     type_ticket = models.ForeignKey(Type,on_delete=models.CASCADE)
     name_person = models.CharField(max_length=20)
     surname_person = models.CharField(max_length=20)
     date_start = models.DateField()
-    #def create(cls, type_ticket, name_person, surname_person, date_start):
-        #item = cls(type_ticket = type_ticket, name_person = name_person, surname_person = surname_person, date_start= date_start )
-        # do something with the item
-        #return item

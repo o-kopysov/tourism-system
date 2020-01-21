@@ -4,9 +4,8 @@ from django.views.generic import ListView,DetailView
 from cart.forms import CartAddItemForm
 from django import forms
 from django.views.generic.edit import FormMixin
-#def index(request):
-    #sights = Sight.objects.all()
-    #return render(request,'home.html', {'sights':sights})
+from django.http import HttpResponseForbidden
+
 class HomeView(ListView):
     model = Sight
     template_name = "home.html"
@@ -18,16 +17,11 @@ class SightDatailView(DetailView):
 class PricesView(ListView):
     model = Type
     template_name = "prices.html"
-#class PricesDatailView(DetailView):
-    #model = Type
-    #template_name = "detail.html"
+
 class PricesDatailView(DetailView):
     model = Type
     template_name = "detail.html"
-class CartAddItemForm(forms.Form):
-    name_person = forms.CharField(max_length=20)
-    surname_person = forms.CharField(max_length=20)
-    date_start = forms.DateField(input_formats=['%d/%m/%Y %H:%M'])
+
 
 class PricesDetail(FormMixin, DetailView):
     model = Type
@@ -37,7 +31,6 @@ class PricesDetail(FormMixin, DetailView):
         context  = super(PricesDetail, self).get_context_data(**kwargs)
         context['form'] = self.get_form()
         return context
-
     def get_initial(self):
         return ({'ticket': self.get_object()})
     def get_success_url(self):
@@ -59,6 +52,5 @@ class PricesDetail(FormMixin, DetailView):
             return self.form_invalid(form)
 
         def form_valid(self, form):
-        # Here, we would record the user's interest using the message
-        # passed in form.cleaned_data['message']
+        # pass message
             return super(PricesDetail, self).form_valid(form)
