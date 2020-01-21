@@ -30,9 +30,8 @@ class Type(models.Model):
     desc = models.TextField()
     price = models.FloatField()
     type_slug = models.SlugField()
-
     def get_absolute_url(self):
-        return reverse("add", kwargs = {
+        return reverse("ticket", kwargs = {
         'pk': self.id
         })
 
