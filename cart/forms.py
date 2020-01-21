@@ -4,6 +4,6 @@ from polls.models import Type, Item
 
 
 class CartAddItemForm(forms.Form):
-    name_person = models.CharField(max_length=20)
-    surname_person = models.CharField(max_length=20)
-    date_start = models.DateField()
+    name_person = forms.CharField(max_length=20)
+    surname_person = forms.CharField(max_length=20)
+    date_start = forms.DateField()

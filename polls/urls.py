@@ -9,6 +9,7 @@ urlpatterns = [
     path('sight/<slug>/', v.SightDatailView.as_view(), name ='sight'),
     path('howitworks/', TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),
     path('prices/', v.PricesView.as_view(), name='prices'),
-    path('add/<pk>/', v.PricesDatailView.as_view(), name='add'),
+    path('ticket/<pk>/', v.PricesDetail.as_view(), name='ticket'),
+    path('add', va.cart_add, name='add'),
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
 ]
