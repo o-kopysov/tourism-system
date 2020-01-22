@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.all{
+	 display: flex;
+	flex-direction:row;
+  justify-content: space-between;
+	margin-top: 30px;
+  flex-wrap: wrap;
+
+}
+
+.article_account{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.section_account{
+  width: 55%;
+  display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-styling {
+  width: 60%;
+  height: 25px;
+	padding-left: 15px;
+	border: none;
+	border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,.2);
+}
+.form-styling1 {
+  width: 25%;
+  height: 25px;
+	padding-left: 15px;
+	border: none;
+text-align: left;
+	border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,.2);
+}
+.gradient-btn_account{
+	display: flex;
+	 align-items: center;
+	 justify-content:center;
+}
+
+.gradient_btn_account{
+
+ display:none;
+
+}
+.Date{
+  display: flex;
+  justify-content: space-around;
+
+}
+:focus {outline: none;
+}
+.All_ticket{
+  font-size: 35px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+.buy_ticket{
+  color: #003366;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.using_ticket{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2{font-size: 45px;
+color: #003366;}
+
+.History{
+  display: flex;
+  justify-content:space-between;
+flex-wrap: wrap;
+  clear: both;
+
+  padding: 15px;
+
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  width: 100%;
+  color:#333333;
+}
+.aside_account{
+  width: 22%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+.basket{
+  display: flex;
+  justify-content:space-around;
+flex-direction: column;
+height: 98%;
+    clear: both;
+    padding: 15px;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.28);
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.28);
+width: 80%;
+}
+.Basket{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.name_info_history{
+   color: #333333;
+  background: #dddfe6;
+  margin-top:20px;
+    font-weight: bolder;
+     border: none;
+    border-radius: 15px;
+    padding: 5px ;
+    text-decoration: none;
+    width:30%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.date_history{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.end_date_history, .start_date_history{
+  font-size: 10px;
+
+  color: #333333;
+}
+.ticket_history{
+
+  background:
+    linear-gradient(to top right,#c94036, #dddfe6, #003366);
+border-radius: 20px;
+  display: flex;
+  margin-bottom: 20px;
+    width: 380px;
+        height: 150px;
+  flex-direction: column;
+    justify-content: space-around;
+  align-items: center;
+}
+
+.title_Tickets{
+  color: #003366;
+  font-size: 30px;
+}
+.price{
+	font-size: 20px;
+	color: #ffffff;
+  text-decoration: overline;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.total_price{
+  font-size: 25px;
+  text-decoration: overline;
+  margin-top: 10px;
+    color: #333333;
+}
+.start_date_basket{
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+}
+.name_info_basket{
+  font-size: 14px;
+  margin-top:20px;
+    color: #c94036;
+    font-weight: bolder;
+     border: none;
+    background:  #003366 ;
+    border-radius: 15px;
+    padding: 5px ;
+    text-decoration: none;
+    width:30%;
+
+    text-align: center;
+}
+.Ticket_basket{
+  display: flex;
+  justify-content: space-between;
+}
+.date{
+  display: flex;
+  width: 10%;
+}
+.day{
+	text-align: center;
+	color: #333333;
+  font-size: 20px;
+}
+.title_Basket{
+  font-size: 23px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items:  center;
+line-height:30px;
+  background: #dddfe6;
+  height:auto;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+ .close{
+   display: flex;
+   justify-content: flex-end;
+ }
+.title_Account{
+display: flex;
+align-items: center;
+justify-content: center;
+  background: #003366;
+  border-radius: 15px;
+  padding: 15px ;
+  text-decoration: none;
+  font-size: 35px;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ticket_basket{
+  background-color: #c94036;
+  width: 90%;
+  height: 100%;
+}
+
+.Name_account, .Surname_account, .Email_account{
+  font-size: 17px;
+  color: #333333;
+}
+
+.name_account, .surname_account, .email_account{
+  font-size: 20px;
+  color: #003366;
+}
+
+.user_name, .user_email, .user_surname{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.ticket_LITE{
+  background: #dddfe6;
+  display: flex;
+  margin-bottom: 20px;
+    width: 100%;
+     box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        height: 200px;
+  flex-direction: column;
+    justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.name_info{
+  margin-top:20px;
+  	color: #c94036;
+  	font-weight: bolder;
+  	 border: none;
+    background:  #003366 ;
+    border-radius: 15px;
+    padding: 15px ;
+    text-decoration: none;
+    width:30%;
+    font-size: 20px;
+    text-align: center;
+}
+.ticket_VIP{
+  background-color: #ffcf40;
+  width:100%;
+  height: 200px;
+ box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.date{
+  display: flex;
+  justify-content: space-around;
+	color: #064069;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 700px) and (min-width: 100px)
+{
+  .section_account{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 250px;
+
+  }
+  .gradient_btn_account{
+  	display:inline;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 6px;
+    color: #fff;
+      line-height: 25px;
+    background: #003366;
+    margin-top: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    border-radius: 60px;
+  overflow: hidden;
+
+  }
+
+  .gradient-btn_account {
+  	display: none;
+  }
+
+  .gradient-btn_account::before, .gradient-btn_account:hover::before{
+  	display: none;
+
+  }
+  .History{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+    .article_account{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 400px;
+    }
+
+  .all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .using_ticket{
+    width: 100%;
+  }
+
+  .aside_account{
+    display: flex;
+    width: 250px;
+    justify-content: center;
+  }
+  .title_Account{
+    font-size: 18px;
+  }
+  .buy_ticket{
+    width: 250px;
+
+  }
+  .name_account,  .surname_account{
+    font-size: 12px;
+  }
+
+  .number_account{
+      font-size: 12px;
+  }
+
+  .date{
+      font-size: 12px;
+  }
+
+  .name_info{
+    font-size: 15px;
+
+  }
+
+  .basket{
+    width: 250px;
+  }
+
+  .total_price{
+      font-size: 11px;
+  }
+  .day{
+      font-size: 11px;
+  }
+    .All_ticket{
+        font-size: 23px;
+    }
+  .title_Basket{
+      font-size: 23px;
+  }
+  .price{
+      font-size: 11px;
+  }
+  .email_account{
+      font-size: 11px;
+  }
+
+  h2{
+      font-size: 18px;
+  }
+
+  .ticket_history{
+    width: 200px;
+  }
+  .form-styling1{
+    font-size: 9px;
+    text-align: left;
+  }
+
+  .form-styling{
+    font-size: 9px;
+    text-align: left;
+  }
+
+  }
+
+@media screen and (max-width: 1200px) and (min-width: 700px)
+{
+.using_ticket{
+  width: 100%;
+}
+  .gradient_btn_account{
+  	display:inline;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 6px;
+    color: #fff;
+      line-height: 25px;
+    background: #003366;
+    margin-top: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    border-radius: 60px;
+  overflow: hidden;
+
+  }
+
+  .gradient-btn_account {
+  	display: none;
+  }
+
+  .gradient-btn_account::before, .gradient-btn_account:hover::before{
+  	display: none;
+
+  }
+
+    .article_account{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .section_account{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+
+
+    }
+
+    .all{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .aside_account{
+      display: flex;
+      width: 250px;
+      justify-content: center;
+    }
+
+  .title_Account{
+    font-size: 23px;
+  }
+  .buy_ticket{
+    width: 400px;
+
+  }
+  .name_account,  .surname_account{
+    font-size: 12px;
+  }
+
+  .number_account{
+      font-size: 12px;
+  }
+
+  .date{
+      font-size: 17px;
+  }
+
+  .name_info{
+    font-size: 20px;
+
+  }
+
+  .basket{
+    width: 300px;
+
+  }
+
+  .total_price{
+      font-size: 23px;
+  }
+  .day{
+      font-size: 23px;
+  }
+    .All_ticket{
+        font-size: 30px;
+    }
+  .title_Basket{
+      font-size: 30px;
+  }
+  .price{
+      font-size: 18px;
+  }
+  .email_account{
+      font-size: 18px;
+  }
+
+  h2{
+      font-size: 23px;
+  }
+
+  .ticket_history{
+    width: 200px;
+  }
+  .form-styling1{
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .form-styling{
+    font-size: 13px;
+    text-align: left;
+  }
+
+
+  }

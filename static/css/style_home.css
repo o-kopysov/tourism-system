@@ -1,0 +1,55 @@
+html, body * { box-sizing: border-box; font-family: 'Muli',sans-serif;}
+
+.subtitle {
+  display: block;
+  font-size: 60px;
+  color: #003366;
+  font-family: "", sans-serif;
+  margin-top: 78px;
+  line-height: 100%;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+
+.attractions {
+  padding: 60px 0;
+}
+
+
+@media screen and (max-width: 400px) and (min-width: 100px)
+{
+
+.description{
+	font-size: 15px;
+}
+
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px)
+{
+	.subtitle{
+  font-size: 29px;}
+
+  .description{
+	font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 700px)
+{
+
+	.subtitle{
+  font-size: 35px;}
+
+  .description{
+	font-size: 15px;
+}
+
+}

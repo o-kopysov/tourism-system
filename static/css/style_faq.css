@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.main_FAQ{
+	 display: flex;
+	flex-direction:row;
+	margin-top: 0px;}
+
+.article_FAQ{
+width: 100%;
+height: 100%;
+}
+
+.aside_FAQ{
+	border-left: 60px solid #dddfe6;
+	 margin-top: 75px;
+	 margin-bottom: 35px;
+}
+
+
+.image1_FAQ{
+	display: flex;
+	align-items: flex-end;
+	margin-top: 75px;
+}
+
+.description_image1_FAQ{
+	height: 50px;
+
+}
+
+.panel1, .panel2, .panel, .panel3, .panel4, .panel5, .panel6 {
+ font-size: 20px;
+color:#18273E;
+height: 20%;
+width: 100%;
+display: none;
+
+
+}
+
+
+.detail
+{
+font-size: 15px;
+color:#18273E;
+text-decoration: none;
+}
+
+.Savings, .Attractions, .btn-slide, .Purchase, .Transport, .Validity, .Contact
+{
+background: #C1292E;
+color: #18273E;
+padding: 15px;
+}
+
+.main__quetion_FAQ {
+  font-size: 24px;
+  margin-top: 5px;
+  line-height: 8px;
+  margin-bottom: 5px;
+}
+
+.main__description_FAQ
+{ font-size: 38px;
+
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+.quetion__description_FAQ {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 700px)
+  {
+.image1_FAQ{
+	display:none;
+}
+
+.quetion_FAQ{
+	font-size: 15px;
+	margin-bottom: 5px;
+	line-height: 25px;
+}
+
+  .aside_FAQ{
+	  display:none;
+  }
+
+
+}
+@media screen and (max-width: 400px) and (min-width: 100px)
+  {
+.image1_FAQ{
+	display:none;
+
+}
+
+.quetion_FAQ{
+	font-size: 10px;
+	margin-bottom: 5px;
+	line-height: 25px;
+
+}
+
+.main__quetion_FAQ {
+  font-size: 18px;
+  margin-top: 5px;
+  line-height: 8px;
+  margin-bottom: 5px;
+}
+
+.panel1, .panel2, .panel, .panel3, .panel4, .panel5, .panel6 {
+ font-size: 10px;
+color:#18273E;
+height: 20%;
+width: 100%;
+display: none;
+
+
+}
+.main__description_FAQ
+{ font-size: 18px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+.quetion__description_FAQ {
+  font-size: 8px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+  .aside_FAQ{
+	  display:none;
+  }
+
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px)
+  {
+
+.image1_FAQ{
+	display:none;
+}
+
+.quetion_FAQ{
+	font-size: 18px;
+	margin-bottom: 5px;
+	line-height: 25px;
+
+}
+
+.main__quetion_FAQ {
+  font-size: 18px;
+  margin-top: 5px;
+  line-height: 8px;
+  margin-bottom: 5px;
+}
+
+.panel1, .panel2, .panel, .panel3, .panel4, .panel5, .panel6 {
+ font-size: 16px;
+color:#18273E;
+height: 20%;
+width: 100%;
+display: none;
+}
+.main__description_FAQ
+{ font-size: 27px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+.quetion__description_FAQ {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 572px;
+  color: #003366;
+}
+  .aside_FAQ{
+	  display:none;
+  }
+
+
+}

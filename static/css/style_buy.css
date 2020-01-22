@@ -1,0 +1,47 @@
+
+.buy{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gradient-btn_Prices {
+
+  transform: translate(0, 10%);
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 8px;
+margin-bottom: 12px;
+  color: #fff;
+  background: #003366;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 6px;
+  transition: .5s;
+  border: 4px solid #003366;
+  border-radius: 60px;
+  box-shadow: 0 5px 20px rgba(0,0,0, .5);
+  overflow: hidden;
+}
+
+
+.gradient-btn_Prices::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #003366, #c94036);
+  z-index: -1;
+  border-radius: 60px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s ease-in-out;
+}
+.gradient-btn_Prices:hover::before {
+  transform: scaleX(1);
+
+
+}

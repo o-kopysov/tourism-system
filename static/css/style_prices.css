@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.gradient-btn_Prices{
+	display: flex;
+	 align-items: center;
+	 justify-content:center;
+}
+
+
+.section_Prices{
+	display: flex;
+	flex-wrap: wrap;
+margin-top: 50px;
+}
+
+.description_Prices{
+	text-align: center;
+}
+
+.price{
+	font-size: 35px;
+	color: #c94036;
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+
+.name_info{
+
+margin-top:20px;
+	color: #c94036;
+	font-weight: bolder;
+	 border: none;
+  background:  #003366 ;
+  border-radius: 15px;
+  padding: 15px ;
+  text-decoration: none;
+  width:30%;
+  font-size: 35px;
+
+
+}
+
+.day{
+	text-align: center;
+	color: #c94036;
+}
+
+
+.title_review{
+	color:#003366 ;
+}
+
+.gradient_btn_Prices{
+
+ display:none;
+
+}
+
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+.slider__item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+   color: #fff;
+  font-size: 17px;
+  max-height: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-shadow: 0px 8px 8px  rgb(80, 80, 80);
+  border-radius: 10px;
+}
+.slider__item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 64, 105);
+  transition: all 1.5s;
+}
+
+.slider__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+.user_name{
+	 padding: 20px 0;
+}
+
+
+.slider__nav--left {
+  width: 32px;
+  height: 33px;
+  border: none;
+  background: transparent url('Polygon_R.png') no-repeat center;
+   -webkit-transform: rotate(180deg);
+
+  cursor: pointer;
+  outline: none; /*убрать контур*/
+}
+
+.slider__nav--right {
+  width: 35px;
+  height: 42px;
+  border: none;
+
+  cursor: pointer; /*чтобы стрелочка менялась на пальчик*/
+  outline: none; /*убрать контур*/
+  background: transparent url('Polygon_R.png') no-repeat center;
+}
+.slider__nav--left span,
+.slider__nav--right span {
+  display: none;
+}
+
+.Lite{
+	 box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	flex-direction: column;
+	line-height: 30px;
+	display: flex;
+
+	width: 30%;
+	margin-right: 25px ;
+	margin-bottom: 25px ;
+	color: #000;
+background-color: #dddfe6;}
+
+.VIP{
+	flex-direction: column;
+	box-shadow: 0 10px 12px rgba(255, 207, 64,0.22), 0 10px 10px rgba(0,0,0,0.22);
+	line-height: 30px;
+	display: flex;
+
+	width: 30%;
+	margin-right: 25px ;
+	margin-bottom: 25px ;
+	color: #000;
+	background-color: #ffcf40;
+}
+
+#more, #more1, #more2, #more3{
+	display: none;
+}
+
+#bt, #bt1, #bt, #bt2, #bt3{
+	padding: 10 px 15px;
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+	width: 150px;
+	transition: 0.3s;
+	border: #fff 2px solid;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px) and (min-width: 100px)
+{
+	.section_Prices{
+		display: flex;
+		justify-content: center;
+	}
+	.title_review{
+		font-size: 15px;
+
+	}
+	.slider__item{
+		width: 60%;
+		height: 250px;
+		font-size: 10px;
+
+	}
+
+
+.ticket, .ticket1{
+	width: 200px;
+}
+
+.name_info, .price, .day{
+	font-size: 20px;
+}
+
+.description_Prices{
+	font-size: 15px;
+}
+
+
+
+.gradient_btn_Prices{
+	display:inline;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+
+  font-size: 10px;
+  color: #fff;
+  background: #003366;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 6px;
+  border-radius: 5%;
+overflow: hidden;
+
+}
+
+.gradient-btn_Prices {
+	display: none;
+}
+
+.gradient-btn_Prices::before, .gradient-btn_Prices:hover::before{
+	display: none;
+
+}
+
+#bt, #bt1, #bt, #bt2, #bt3{
+
+	font-size: 10px;
+	width: 50px;
+
+}
+.slider__year{
+	margin-bottom:15px;
+}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 400px)
+{
+	.title_review{
+		font-size: 22px;
+	}
+	.section_Prices{
+		display: flex;
+		justify-content: center;
+	}
+	.slider__item{
+		width: 300px;
+		height: 100%;
+		font-size: 15px;
+
+	}
+
+
+.ticket, .ticket1{
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.name_info, .price, .day{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.description_Prices{
+	font-size: 15px;
+}
+
+.gradient-btn_Prices{
+ display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.gradient_btn_Prices{
+	display:inline;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+
+  font-size: 10px;
+  color: #fff;
+  background: #003366;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 6px;
+  border-radius: 60px;
+overflow: hidden;
+
+}
+
+.gradient-btn_Prices {
+	display: none;
+}
+
+.gradient-btn_Prices::before, .gradient-btn_Prices:hover::before{
+	display: none;
+
+}
+
+}

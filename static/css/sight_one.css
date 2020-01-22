@@ -1,0 +1,62 @@
+.block1{
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  background:#dddfe6;
+  margin-top:35px;
+}
+
+.sight_one{
+font-size: 25px;
+color:#003366;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.description2{
+  font-size: 20px;
+  color:#003366;
+  width: 35%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.block3-year{
+display: flex;
+font-weight: 800;
+}
+
+
+.block3-site{
+  margin-top: 20px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bolder;
+    border: none;
+    background: #4CAFE0;
+    border-radius: 15px;
+    padding: 0px 8px 0px 8px ;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+.info1{
+  flex-direction:column;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 450px;
+
+}
+.block2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 60px;
+
+}
+h1{text-align: center;
+}

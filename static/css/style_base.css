@@ -1,0 +1,478 @@
+* { box-sizing: border-box; font-family: 'Muli',sans-serif;}
+
+  body {
+    background: #ffffff;
+    color: #fff;
+    font-size: 20px;
+  font-family: 'Muli', sans-serif;
+
+  }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 100px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #003366;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.nav__login {
+  border: 10px solid #003366;
+  padding-top: 0px;
+  font-size: 34px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  background: #003366;
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+position: absolute;
+	left: 0;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	background: #dddfe6;
+	font-size: 70px;
+  color: #333333;
+  height: 35%;
+  display: flex;
+}
+
+.social{
+	display: flex;
+}
+.name{
+	font-size: 40px;
+
+}
+.number{
+	font-size: 30px;
+
+}
+.mail{
+	font-size: 20px;
+}
+
+.icon-close, .icon-menu{
+	display:none;
+}
+
+@media screen and (max-width: 400px) and (min-width: 100px)
+{
+body {
+  left: 0;
+  overflow-X: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.btn:after,
+.btn:before{
+	display:none;
+}
+
+.btn{
+	font-size: 15px;
+}
+
+footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.description{
+	font-size: 15px;
+}
+
+.subtitle{
+  font-size: 25px;}
+
+.header__logo{
+	margin-top:10px;
+	height: 55px;
+}
+
+.menu {
+  background: white;
+  left: -285px; /* прячем меню */
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  width: 285px;
+  color: #003366;
+}
+
+.menu nav {
+  border-top: 1px solid #555;
+  list-style: none;
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav:hover {
+  cursor: pointer;
+  background-color: #dddfe6;
+  }
+
+.menu a {
+   color: #003366;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  display:inline;
+}
+
+.icon-MENU{
+	background-color: #c94036;
+	font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  display:inline;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu img {
+  margin-right: 5px;
+  display:inline;
+}
+
+  .header__logo {
+  margin-right: 50px;
+}
+  .nav__login{
+	display: flex;
+   align-items: flex-end;
+  }
+  .nav__link {
+  text-decoration: none;
+  color: #003366;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+  .name{
+	display: none;
+}
+
+	.nav{
+	display: none;
+}
+
+	header {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.mail, .number{
+	font-size:15px;
+
+}
+footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px)
+{
+body {
+  left: 0;
+  overflow-X: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.btn:after,
+.btn:before{
+	display:none;
+
+}
+
+footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+
+.header__logo{
+	margin-top:10px;
+	height: 55px;
+}
+
+.menu {
+  background: white;
+  left: -285px; /* прячем меню */
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  width: 285px;
+  color: #003366;
+
+}
+
+.menu nav {
+  border-top: 1px solid #555;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  line-height: 45px;
+  padding: 0;
+}
+
+
+
+.menu nav:hover {
+  cursor: pointer;
+  background-color: #dddfe6;
+  }
+
+.menu a {
+   color: #003366;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  display:inline;
+
+
+}
+.icon-MENU{
+	background-color: #c94036;
+	font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  display:inline;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu img {
+  margin-right: 5px;
+  display:inline;
+}
+
+
+  .nav__login{
+	display: flex;
+   align-items: flex-end;
+  }
+  .nav__link {
+  text-decoration: none;
+  color: #003366;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+
+
+ header {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.mail, .number{
+	font-size:15px;
+
+}
+footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+.nav{
+	display:none;
+}
+.name{
+	display:none;
+
+}
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 700px)
+{
+body {
+  left: 0;
+  overflow-X: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.btn:after,
+.btn:before{
+	display:none;
+
+}
+
+footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+
+.header__logo{
+	margin-top:10px;
+	height: 55px;
+}
+
+.menu {
+  background: white;
+  left: -285px; /* прячем меню */
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  width: 285px;
+  color: #003366;
+
+}
+
+.menu nav {
+  border-top: 1px solid #555;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav {
+  border-bottom: 1px solid #555;
+
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+
+}
+
+.menu nav:hover {
+  cursor: pointer;
+  background-color: #dddfe6;
+  }
+
+.menu a {
+   color: #003366;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  display:inline;
+
+
+}
+.icon-MENU{
+	background-color: #c94036;
+	font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  display:inline;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu img {
+  margin-right: 5px;
+  display:inline;
+}
+  .nav__login{
+	display: flex;
+   align-items: flex-end;
+  }
+  .nav__link {
+  text-decoration: none;
+  color: #003366;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+ header {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.mail, .number{
+	font-size:15px;
+
+}
+
+}
