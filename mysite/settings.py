@@ -85,7 +85,7 @@ DATABASES = {
         # port number.
         'PORT': '3306',
         # database name.
-        'NAME': 'mysfirstdb',
+        'NAME': 'kproject',
         # user name.
         'USER': 'root',
         # password
